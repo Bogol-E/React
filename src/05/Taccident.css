@@ -1,0 +1,63 @@
+.tcontent {
+    width: 100vw;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+}
+
+.theader {
+    width: 100%;
+    height: 10vh;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+}
+
+.tmain {
+    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: top;
+    margin: 10px; 
+}
+
+
+.tc1 , .tc2, .tdetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center; 
+    border: 1px solid grey;
+    margin: 10px;
+}
+
+.tc1, .tc2 {
+    width: 250px ;
+    padding: 10px;
+}
+
+.tdetail {
+    width: 40% ;
+}
+
+
+.tcard, .tcardSel {
+    width: 100%;
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.tcard:hover, .tcard:active, .tcardSel {
+    background-color: darkblue;
+    color: white;
+}

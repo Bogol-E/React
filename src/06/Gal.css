@@ -1,0 +1,63 @@
+.head{
+    display: flex;
+    height: 20vh;
+    width: 100vw;  
+    background-color: blue;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.galTitle{
+    font-size: 2em;
+}
+.galPhotographyLocation{
+    font-size: 1.6em;
+}
+
+.main {
+    display: flex;
+    height: 80vh;
+    background-color: blanchedalmond;
+    justify-content: center;
+}
+
+.galm, .gald {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: top;
+    background-color: darkkhaki;
+    flex-direction: column;
+    align-items: top;
+}
+
+.click {
+    background-color: red;
+}
+
+.galM div{
+    background-color:  yellowgreen;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 6%;
+    border: solid black 3px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.galM div:hover{
+    background-color: red;
+    font-weight: bold;
+}
+
+.img {
+    width: 95%;
+    height: 45%;
+    object-fit: cover;
+}
+
+h2, h3{
+     line-height: 50%;
+}
+
