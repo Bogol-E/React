@@ -32,3 +32,5 @@ const Mycom = () => {
         </>
     );
 }
+
+export default Mycom;
