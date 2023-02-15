@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.mvh {
+    width: 100vw;
+    height: 80px;
+
+    background-color: darkblue;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mvh > h1, .mvh > form { 
+    display: flex;
+    justify-content: center;
+}
+ 
+.mvh > h1{
+    width: 70%;  
+    align-items: center;
+}
+
+.mvh > form { 
+    width: 30%;  
+    align-items: left;
+}
+
+input  {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }

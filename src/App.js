@@ -1,4 +1,4 @@
-import Async from './11/Async';
+import Boxoffice from './11/Boxoffice';
 import './App.css'; 
 
 
@@ -6,7 +6,7 @@ import './App.css';
 const App = () => {
   return (
     
-    <Async />
+    <Boxoffice />
   );
 }
 
