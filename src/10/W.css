@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.content {
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.wheader {
+    width: 420px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:darkblue ;
+    color: white;
+}
+.wheader > h1 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wheader > div {
+    font-size: 2em;
+}
+.wmain {
+    width: 420px; 
+    height: 80%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: top;
+    
+    align-items: center;
+}
+
+.wmain > ul {
+    list-style: none;
+    width: 80%;
+    height: 80%;
+}
+
+.wmain li {
+    width: 80%;
+    height: 30%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid gainsboro;
+    font-size: 3em;
+}
+.wmain li:hover, .wmain li:active {
+    background-color: darkblue;
+    color: white;
+}
+
+a, a:visited {
+    text-decoration: none; 
+    color: darkblue;
+}
+ 
+a:hover, a:active {
+    background-color: darkblue;
+    color: white;
+}
+
+.w2div {
+    width: 420px; 
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid gainsboro;
+}
+
+.sp0, .sp1, .sp2 {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1em;
+}
+
+.sp0 {
+    width : 30% ;
+    justify-content: right;
+    color: gray;
+    font-weight: bold;
+}
+
+.sp1 {
+    width : 20% ; 
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+.sp2 {
+    width : 20% ; 
+    justify-content: left;
+}

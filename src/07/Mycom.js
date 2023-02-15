@@ -33,4 +33,4 @@ const Mycom = () => {
     );
 }
 
-export default Mycom;
+export default Mycom ;

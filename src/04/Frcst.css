@@ -57,7 +57,7 @@
 
 .detail {
     width: 80%;
-    height: 10vh;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,14 @@
     padding: 10px;
 }
 
+@keyframes blink-effect {
+    50% {
+      /* opacity: 0; */
+      color :black
+    }
+  }
+
 .lired {
-    color: white;
-    background-color: red;
+    color: red; 
+    animation: blink-effect 1s step-end infinite;
 }

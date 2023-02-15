@@ -145,44 +145,72 @@ const Taccident = () => {
         "perPage": 20,
         "totalCount": 15
       } ;
+    
+    //자바스크립트 object는 키와 값으로 분리 가능 => 배열
+    let objK = Object.keys(apiData) ;
+    let objv = Object.values(apiData) ;
+    console.log("object 키 ", objK);
+    console.log("object 값 ", objv);
 
-    // console.log("apiData", apiData) ;
-    // for(let item in Object.keys(apiData)) {
-    //   console.log("objct 키순회: ", item) ;
-    // }
-    
-    // for(let item in Object.keys(apiData)) {
-    //   console.log("objct 키순회: ", item) ;
-    // }
-    
-    let c1 , c2, data ;  
-    //데이터 data => 배열 [{항목의 내용}, ...]
+    //배열의 map, filter
+    let newv ;  
+    newv = Object.keys(apiData).map((k) => apiData[k]) 
+    console.log("새로운배열" , newv);
+
+    //배열의 filter
+    let data ;
+    data = objK.filter((item) => item==='data')
+    data = data.map((k)=> apiData[k])
+    console.log("filer로 data추출", data)
+
+    //오브젝트 키로 접근
     data = apiData.data ;
-    //console.log("data", data) ;
+    console.log("오브젝트 키로 data추출1", data) 
+    data = apiData['data'] ;
+    console.log("오브젝트 키로 data추출2", data)  
 
-    //대분류 c1 => 배열 [대분류1, ...]
-    c1 = data.map((item) =>
-                  //item.사고유형_대분류 ;
-                  item['사고유형_대분류']
-    );
-
+    //대분류 추출
+    let c1 = data.map((item) => item.사고유형_대분류) ;
+    console.log("대분류 추출 1단계", c1);
     c1 = new Set(c1) ;
+    console.log("대분류 추출 2단계 Set으로 중복 제거", c1);
     c1 = [...c1] ;
-    //console.log("c1", c1);
+    console.log("대분류 추출 3단계 Set을 Array로 변환", c1);
 
-    //중분류 c2 => 배열 [[대분류1, 중분류1], ...]
-    c2 = [] ;
-    for(let item of data) {
-      let temp = [] ;
-      temp.push(item.사고유형_대분류) ;
-      temp.push(item.사고유형_중분류) ;
-      c2.push(temp);  
+    //중분류
+    // let c2 = data.map((item) => 
+    //     (item.사고유형_대분류 +',' + item.사고유형_중분류).split(',')
+    // ) ;
+
+    let c2 = data.map((item) => 
+        [item.사고유형_대분류, item.사고유형_중분류]
+    ) ;
+    console.log("중분류 map으로 추출", c2);
+
+    //배열의 entries
+    for(let [k, v] of c2.entries()) {
+      console.log("k ", k, ", v" , v) ;
     }
-    //console.log("c2", c2)
-  
+
+    //배열 
+    let c11 = data.map((item) => item.사고유형_대분류);
+    let c21 = data.map((item) => item.사고유형_중분류);
+    console.log("c11", c11) ;
+    console.log("c21", c21) ;
+
+    let cobj = {} ;
+    for(let [k, v] of c21.entries()) {
+      console.log("k ", k, ", v" , v) ;
+      cobj[v] = c11[k] ;
+    }
+    console.log("cobj", cobj);
+
+    //{ '차대사람' : ['횡단중', '차도통행중', '길가장자리구역통행중', '보도통행중'] ... }
+
+
     return (
         <>
-          <Taccidentm c1={c1} c2 ={c2} data={data} />
+           
         </>
     ) ;
 }

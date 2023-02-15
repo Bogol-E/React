@@ -12,11 +12,10 @@
 // galSearchKeyword	string 검색 키워드
 
 import GalMain from "./GalMain";
-import data from "../db/data.json" ;
+import data from "../db/data.json"
 
 const Gal = () => {
-  console.log(data) ;
-
+  
   let item = data.response.body.items.item ;
   let c1 = item.map((i) => i.galTitle) ;
 

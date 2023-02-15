@@ -1,12 +1,8 @@
-/* * {
-    margin: 0px;
-    padding: 0px;
-} */
 .content {
     width: 100vw;
     height: 100vh;
 
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: top;
 
@@ -14,45 +10,21 @@
 }
 
 .conleft {
-    width: 35vw;
+    width: 45vw;
     height: 80vh;
-
-    display: flex;
     flex-direction: column;
+    display: flex;
     justify-content: right;
     align-items: top;  
     margin: 20px 10px;
 }
-.conleft > ul,  .conleft > div{
-    width: 80%;
+.conleft > ul, .conleft > div {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
-
     list-style: none; 
-}
-input[type=text] {
-    width: 150px;
-    padding: 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-button {
-    display: inline-flex;
-    margin: 5px;
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-}
-.conleft > div {
-    background-color: darkblue;
-    padding: 20px;
 }
 .uli, .ulis{
     width: 100%;
@@ -69,19 +41,18 @@ button {
     font-weight: bold;
 }    
 .conright {
-    width: 50vw;
+    width: 55vw;
     height: 80vh;
 
     display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;  
+    justify-content: center;
+    align-items: top;  
     margin: 10px; 
 }
 
 .concard {
-    width: 300px;
-    height: 400px;
+    width: 95%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,31 +79,18 @@ button {
     height: 200px;
 }
 
-
-.gallt {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+.conleft div {
+    background-color: blueviolet;
+    padding: 10px;
+    justify-items: right;
 }
 
-select {
-    width: 200px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+input[type=text]{
+    width: 60%;
 }
 
-.inbox {
-    width: 300px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid gainsboro;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 0px;
-    background-color: darkblue;
-    color: white; 
+button[type=reset]{
+    width: 25%;
+    background-color: green;
+    margin-left: 5%;
 }

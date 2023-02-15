@@ -1,0 +1,33 @@
+import "./Gal.css"
+
+
+let c1 = []
+
+
+const Galselect = () => {
+
+    let opt = () =>{
+        c1.map((i)=>{
+            return <option value={i}>{i}</option>
+            
+        }
+            
+        )    
+    }
+
+    
+
+    return (
+        <>
+        <div>
+            <form>
+                <select>
+                    {opt}
+                </select>
+            </form>
+        </div>
+        </>
+    )
+}
+
+export default Galselect;

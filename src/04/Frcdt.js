@@ -1,7 +1,8 @@
-const Frcdt = ({dt, setDt}) => {
-    let dtdiv1Tag = [...dt] ; 
+const Frcdt = ({fcrdt, setDt}) => {
+    console.log("frcdt-dt ", fcrdt) ;
+    let dtdiv1Tag = [...fcrdt] ; 
     const show = (v) => {
-        // console.log("show ", v) ;
+        console.log("show ", v) ;
         setDt(v) ;
     }
 

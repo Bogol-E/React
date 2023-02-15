@@ -61,3 +61,43 @@
     background-color: darkblue;
     color: white;
 }
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+ul > li {
+    display:flex;
+    margin: 2px;
+}
+
+.sp1, .sp11, .sp2, .sp21 {
+    display: inline-flex;
+    width: 35%;
+    height: 40px;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    background-color:darkblue;
+    color: white;
+}
+
+.sp11 {
+    background-color:brown ;
+}
+
+.sp2, .sp21 { 
+    width: 60%; 
+    justify-content: left;
+    align-items: center;
+    background-color: white ;
+    color: black;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+.sp21 {
+    color:brown ;
+}
