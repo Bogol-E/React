@@ -35,3 +35,41 @@ input  {
     margin: 8px 0;
     box-sizing: border-box;
   }
+  .left {
+    height: 80vh;
+    width: 70vw;
+  }
+
+  .left div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    font-size: 1.2em;
+  }
+
+  .left div:hover{
+    background-color: skyblue;
+  }
+
+  .left span{
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .s1{
+    width: 10%;
+  }
+  .s2{
+    width: 60%;
+  }
+  .s3{
+    width: 30%;
+  }
+  .row{
+    background-color: green;
+    border: 5px;
+    margin: 5px;
+    color: yellow;
+    font-weight: bold;
+  }
