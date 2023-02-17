@@ -15,7 +15,7 @@ const Boxofficelist = ({ tg }) => {
     useEffect(() => {
         if (!tg) return;
         const api = 'f5eef3421c602c6cb7ea224104795888&';
-        let url = `http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?`;
+        let url = `https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?`;
         url += `key=${api}`;
         url += `targetDt=${tg}`;
 
