@@ -7,6 +7,7 @@ const Boxoffice = () => {
     const [targetDt, setTargetDt] = useState();
 
     //input 제어
+    
     const mvdr = useRef();
 
     //처음 랜더링
