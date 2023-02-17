@@ -1,75 +1,102 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
+
 .mvh {
-    width: 100vw;
-    height: 80px;
+  width: 100vw;
+  height: 80px;
 
-    background-color: darkblue;
-    color: white;
+  background-color: darkblue;
+  color: white;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mvh > h1, .mvh > form { 
-    display: flex;
-    justify-content: center;
-}
- 
-.mvh > h1{
-    width: 70%;  
-    align-items: center;
+.mvh>h1,
+.mvh>form {
+  display: flex;
+  justify-content: center;
 }
 
-.mvh > form { 
-    width: 30%;  
-    align-items: left;
+.mvh>h1 {
+  width: 70%;
+  align-items: center;
 }
 
-input  {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-  .left {
-    height: 80vh;
-    width: 70vw;
-  }
+.mvh>form {
+  width: 30%;
+  justify-content: top;
+}
 
-  .left div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 7vh;
-    font-size: 1.2em;
-  }
 
-  .left div:hover{
-    background-color: skyblue;
-  }
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
 
-  .left span{
-    display: inline-flex;
-    align-items: center;
-  }
+.left {
+  float: left;
+  display: inline-block;
+  height: 80vh;
+  width: 60vw;
+  
+  flex-direction: column;
 
-  .s1{
-    width: 10%;
-  }
-  .s2{
-    width: 60%;
-  }
-  .s3{
-    width: 30%;
-  }
-  .row{
-    background-color: green;
-    border: 5px;
-    margin: 5px;
-    color: yellow;
-    font-weight: bold;
-  }
+}
+
+.right {
+  display: inline-block;
+  height: 80vh;
+  width: 40vw;
+  background-color: rebeccapurple;
+}
+.right div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  font-size: 1.2em;
+}
+
+
+.left div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  font-size: 1.2em;
+}
+
+.left div:hover {
+  background-color: skyblue;
+}
+
+.left span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.s1 {
+  width: 10%;
+}
+
+.s2 {
+  width: 65%;
+}
+
+.s3 {
+  width: 25%;
+}
+
+.row {
+  background-color: green;
+  border: 5px;
+  margin: 5px;
+  color: yellow;
+  font-weight: bold;
+}
