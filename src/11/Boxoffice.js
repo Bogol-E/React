@@ -19,7 +19,7 @@ const Boxoffice = () => {
         //    console.log("targetDt" , targetDt)
     }, [targetDt]);
 
-    //input 이벤트
+    //input 이벤트jj
     const handleMv = () => {
         // console.log(mvdr.current.value)
         setTargetDt(mvdr.current.value.replaceAll('-', ''));

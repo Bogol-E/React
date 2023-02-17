@@ -1,21 +1,14 @@
 import { useEffect, useState } from "react";
 
+const Boxofficelist = ({tg}) => {
 
+        console.log(tg)
 
-const Boxofficelist = ({ tg }) => {
-    const [con, setcon]=useState();
-    const [cd, setcd]=useState();
-    // let showdetail({i.movieCd}) =>{
-    //     return setcd({i.movieCd})
-    // }
-    useEffect(() => {
+    useEffect(()=>{
         if (!tg) return;
-        const api = 'f5eef3421c602c6cb7ea224104795888&';
-        // let url = `http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20120101`;
-        let url=`http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?`;
-        url += `key=${api}`;
-        url += `targetDt=${tg}`;
-        
+        const api='f5eef3421c602c6cb7ea224104795888&';
+        let url=`http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt=20120101`;
+        // let url=`http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${api}targetDt=${tg}`;
 
         fetch(url)
             .then((resp) => resp.json())
@@ -41,9 +34,7 @@ const Boxofficelist = ({ tg }) => {
                 setcon(<div><h2>랜더링 실패 지난 날짜를 선택하세요</h2></div>)
             })
 
-    }, [tg])
-
-
+    }, [])
 
 
 
