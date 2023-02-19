@@ -7,7 +7,10 @@ const Boxofficelist = ({ tg }) => {
     const [cd, setcd] = useState();
     let showdetail = (cd) => {
         return setcd(cd);
+        
     }
+
+    // l i I j 1 \ | 0 8 o O
 
     console.log(cd);
 
